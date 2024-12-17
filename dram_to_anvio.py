@@ -35,7 +35,6 @@ import sys
 import pandas as pd
 import re
 
-
 # save separate lists of anvi'o gene names and their amino acid sequences
 anvio_gene_ids = []
 anvio_gene_seqs = []
@@ -51,7 +50,6 @@ with open(str(sys.argv[1]),'r') as anvio_genes:
 	
 #sanity check of anvi'o table. Should have gene_caller_ids numbers and amino acid sequences
 #anvio_gene_table.to_csv('anvio_only_table.txt', sep='\t', index=False)
-
 
 # Now read in and process DRAM outputs.
 with open('genes.faa', 'r') as dram_file:
